@@ -42,6 +42,9 @@ Robotikte önemli bir konu olan çarpışma önleme algoritmalarını (collision
 - Çarpışma önleme hangi ortamda daha zordur?
   - Sadece bir robotun ve etrafındaki statik ortam.
   - Hareket eden objelerin ya da başka robotların olduğu bir ortam.
+  
+<br/><br/>
+<ins>Araştırma Görevleri Hakkında Dipnot</ins>: Araştırma görevleri için rapor yazarken repositorydeki [referans klasöründe](referans) yer alan rapor kurallarına dikkat edilmeli ve rapor formatına uygun bir şekilde yazılmalıdır.
 <br/><br/>
 ## Uygulamalı Görevler
 
