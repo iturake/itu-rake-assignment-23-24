@@ -1,4 +1,8 @@
-# İTÜ RAKE Yazılım Ekibi Araştırma ve Uygulama Görevleri
+<p align="center">
+  <img src="https://rake.itu.edu.tr/img/rake-white-logo.png" width="350" title="İTÜ Robotik Arama Kurtarma Ekibi">
+</p>
+
+# İTÜ RAKE - Yazılım Ekibi Araştırma ve Uygulama Görevleri
 
 ## Robot Operating System (ROS) Araştırması
 
