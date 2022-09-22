@@ -54,3 +54,10 @@ Robotikte önemli bir konu olan çarpışma önleme algoritmalarını (collision
 - Ubuntu 20.04 İşletim Sistemi' ne ROS Noetic kurulumu
 
 Yukarıdaki yazılımları arama motoru üzerinde aratarak yazılımların resmi sayfasına ulaşıp kurulumları gerçekleştirmeniz gerekmektedir.
+
+### Python Programlama Dilinde Publisher ve Suscriber Yazımı
+
+- Repository içerinde [python-assigment dosyası](https://github.com/iturake/itu-rake-assignment-23/tree/main/python-assignment) içinde size verilen kodlar üzerinde programları yazmanız beklenmektedir.
+- Publisher ile /cmd_vel topic'ine veri göndermeniz, subscriber ile aynı topic üzerinden gönderilen veriyi dinlemeniz gerekmektedir.
+- Topic'e veri gönderimi, verinin broker'a gönderilmesi ile sağlanacaktır. (publisher'ın görevi)
+- Topic'den veri alımı, broker üzerinde topic'de bekleyen verinin dinlenilmesi ile sağlanacaktır. (subscriber'ın görevi)
