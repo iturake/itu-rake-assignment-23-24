@@ -1,0 +1,4 @@
+publisher = PUB
+subscriber = SUB
+seperator = $
+
