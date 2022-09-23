@@ -25,7 +25,8 @@ class Broker:
             datetime.now().strftime("%Y/%m/%d %H:%M:%S.%f"), msg))
 
     def __extract_data(self, raw_data: bytes):
-        client_type = topic_name = data = None  # Initialize
+        # Initialization and decoding
+        client_type = topic_name = data = None
         data_arr = raw_data.decode(FORMAT).split(SEPERATOR)
 
         # Message Format: TYPE$TOPIC$DATA (DATA is optional)
@@ -38,6 +39,7 @@ class Broker:
 
     def __process(self, addr: tuple[str, int], raw_data: bytes):
         client_type, topic_name, data = self.__extract_data(raw_data)
+
         if client_type.lower() == "pub":  # If the client is publisher
             self.topics.update({topic_name: data})
             self.__log("Data is published to the topic \'{}\'".format(topic_name))
@@ -67,9 +69,10 @@ class Broker:
                             self.socket.sendto(str(data).encode(FORMAT), client_addr)
                             send_to_n_subs += 1
                     
-                    # Delete data if it is sent to a subscriber
+                    # Delete data if it is sent to a subscriber(s)
                     if send_to_n_subs != 0:
                         self.topics.update({topic_name_search: None})
+                        self.__log("Subscribers of the topic \'{}\' are notified".format(topic_name_search))
             
             # Rest a bit
             time.sleep(1)

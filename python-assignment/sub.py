@@ -11,7 +11,7 @@ BUFFER_SIZE = 4096
 ACK = "ACK"
 FORMAT = "utf-8"
 SEPERATOR = "$"
-TOPIC = "image_processor"
+TOPIC = None
 
 
 def __generate_subscribe_message(topic_name: str = "default"):
