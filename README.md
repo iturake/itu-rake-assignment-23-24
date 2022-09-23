@@ -61,3 +61,13 @@ Yukarıdaki yazılımları arama motoru üzerinde aratarak yazılımların resmi
 - Publisher ile pub.py dosyasında yer alan topic'lerden herhangi birine (rastgele topic seçen fonksiyon tanımlanmıştır) veri göndermeniz, subscriber ile aynı topic üzerinden gönderilen veriyi dinlemeniz gerekmektedir.
 - Topic'e veri gönderimi, verinin broker'a gönderilmesi ile sağlanacaktır. (publisher'ın görevi)
 - Topic'den veri alımı, broker üzerinde topic'de bekleyen verinin dinlenilmesi ile sağlanacaktır. (subscriber'ın görevi)
+<br/><br/>
+<p align="center">
+  <img src="https://github.com/iturake/itu-rake-assignment-22-23/blob/main/referans/images/starting.png?raw=true" width="900" title="Starting Terminal">
+</p>
+<div align="center">Yukarıdaki resimde görüldüğü üzere 3 terminalde sırasıyla broker.py, sub.py ve pub.py'ın çalıştırılması gerekmektedir. sub.py'ın çalıştırılırken resimde gözüktüğü gibi program argümanı olarak topic ismi verilmesi gerekmektedir.</div>
+<br/><br/>
+<p align="center">
+  <img src=https://github.com/iturake/itu-rake-assignment-22-23/blob/main/referans/images/running.png?raw=true" width="900" title="Running Terminal">
+</p>
+<div align="center">Örnek çktı yukarıdaki resim gibidir.</div>
