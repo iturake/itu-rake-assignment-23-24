@@ -37,7 +37,7 @@ if __name__ == "__main__":
     """
         Description:
             - aim is to write a publisher client, which communicates in UDP
-            - publishes data to a random topic in the broker in every 0.5 seconds
+            - publishes data to a random topic in the broker in every 2 seconds
             - receives ACK from the broker after publishing data
 
         Sample Use:

@@ -51,9 +51,14 @@ class Broker:
 
     def __listen_thread(self):
         while True:  # Infinite loop
-            raw_data, client_addr = self.socket.recvfrom(BUFFER_SIZE)  # Receive message
-            self.__process(client_addr, raw_data)  # Handle the message
-            self.socket.sendto(ACK.encode(FORMAT), client_addr)  # Send ACK
+            try:
+                raw_data, client_addr = self.socket.recvfrom(BUFFER_SIZE)  # Receive message
+                self.__process(client_addr, raw_data)  # Handle the message
+                self.socket.sendto(ACK.encode(FORMAT), client_addr)  # Send ACK
+            except:
+                # Error occurred because subscriber is left.
+                time.sleep(0.25)
+                pass
 
     def __speak_thread(self):
         while True:  # Infinite loop
@@ -66,19 +71,26 @@ class Broker:
                     # Search for subscribers
                     for client_addr, topic_name in self.subscribers.items():
                         if topic_name == topic_name_search:
-                            self.socket.sendto(str(data).encode(FORMAT), client_addr)
-                            send_to_n_subs += 1
-                    
+                            try:
+                                self.socket.sendto(str(data).encode(FORMAT), client_addr)
+                                send_to_n_subs += 1
+                            except:
+                                self.subscribers.pop(client_addr)
+                                self.__log("Subscriber in {}:{} is dead, removed from the subscriber map".format(
+                                    client_addr[0], client_addr[1]))
+
                     # Delete data if it is sent to a subscriber(s)
                     if send_to_n_subs != 0:
                         self.topics.update({topic_name_search: None})
                         self.__log("Subscribers of the topic \'{}\' are notified".format(topic_name_search))
+                        send_to_n_subs = 0
             
             # Rest a bit
             time.sleep(1)
 
     def run(self):
         # Initialize socket
+        self.__log("Broker is started")
         self.socket.bind((HOST, PORT))
 
         # Start threads
