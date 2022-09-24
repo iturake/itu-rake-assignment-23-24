@@ -70,4 +70,4 @@ Yukarıdaki yazılımları arama motoru üzerinde aratarak yazılımların resmi
 <p align="center">
   <img src=https://github.com/iturake/itu-rake-assignment-22-23/blob/main/referans/images/running.png?raw=true" width="900" title="Running Terminal">
 </p>
-<div align="center">Örnek çktı yukarıdaki resim gibidir.</div>
+<div align="center">Örnek çıktı yukarıdaki resim gibidir.</div>
