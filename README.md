@@ -20,7 +20,7 @@ Sorularına karşılık, kendi cümlelerinizle hazırladığınız en az 1 sayfa
 ### ROS Elemanlarını Öğrenme Araştırması
 - ROS workspace, nodes, topics, services, master-slave structure, parameter server
 - ROS .launch files, .yaml files, CMakelist.txt
-- ROS MoveIt Packege
+- ROS MoveIt Package
 - Gazebo, RViz
  
 Yukarıda yer alan kavramları, dosyaları, paketleri ve çeşitli araçları maddeler halinde kendi yorumunuzla
