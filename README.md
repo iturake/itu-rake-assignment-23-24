@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://rake.itu.edu.tr/img/rake-white-logo.png" width="350" title="İTÜ Robotik Arama Kurtarma Ekibi">
+  <img src="https://rake.itu.edu.tr/static/img/logo_footer.png" width="350" title="İTÜ Robotik Arama Kurtarma Ekibi">
 </p>
 
 # İTÜ RAKE - Yazılım Ekibi Araştırma ve Uygulama Görevleri
