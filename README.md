@@ -37,10 +37,11 @@ Bilmeniz ve uygulayabilmeniz gerekmektedir. Bu görev için rapor yazılmayacakt
 <br/><br/>
 ## Çarpışma Önleyici Algoritmalar Araştırması
 Robotikte önemli bir konu olan çarpışma önleme algoritmalarını (collision avoidance algorithms) araştırmanız gerekmetedir. Bu araştırma için en az 1.5 sayfa olacak şekilde rapor hazırlanması gerekmektedir. Değinilmesi gereken konular şunlardır:
+- Robotikte sıkça kullanılan Çarpışma Önleyici Algoritmalar nelerdir ve nasıl çalışırlar?
 - Çarpışma önleme bir robot için neden önemlidir?
 - Afet sonrası ortamlarda çarpışma önleme neden önemlidir?
 - Çarpışma önleme hangi ortamda daha zordur?
-  - Sadece bir robotun ve etrafındaki statik ortam.
+  - Sadece bir robot ve etrafındaki statik ortam.
   - Hareket eden objelerin ya da başka robotların olduğu bir ortam.
   
 <br/><br/>
@@ -55,7 +56,7 @@ Robotikte önemli bir konu olan çarpışma önleme algoritmalarını (collision
 
 Yukarıdaki yazılımları arama motoru üzerinde aratarak yazılımların resmi sayfasına ulaşıp kurulumları gerçekleştirmeniz gerekmektedir.
 
-### Python Programlama Dilinde Publisher ve Suscriber Yazımı
+### Python Programlama Dilinde Publisher ve Subscriber Yazımı
 
 - Repository içerinde [python-assigment dosyası](https://github.com/iturake/itu-rake-assignment-23/tree/main/python-assignment) içinde size verilen kodlar üzerinde programları yazmanız beklenmektedir.
 - Publisher ile pub.py dosyasında yer alan topic'lerden herhangi birine (rastgele topic seçen fonksiyon tanımlanmıştır) veri göndermeniz, subscriber ile aynı topic üzerinden gönderilen veriyi dinlemeniz gerekmektedir.
